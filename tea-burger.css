@@ -1,0 +1,114 @@
+.burger-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+.burger {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  display: block;
+  border: none;
+  background: transparent;
+  width: 40px;
+  height: 24px;
+}
+.burger::before,
+.burger::after {
+  content: '';
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 3px;
+  border-radius: 10px;
+  background: #000;
+}
+.burger::before {
+  top: 0;
+  box-shadow: 0 11px 0 #000;
+  transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+}
+.burger::after {
+  bottom: 0;
+  transition: bottom .3s .15s, transform .3s;
+}
+.burger-checkbox:checked + .burger::before {
+  top: 11px;
+  transform: rotate(45deg);
+  box-shadow: 0 6px 0 rgba(0,0,0,0);
+  transition: box-shadow .15s, top .3s, transform .3s .15s;
+}
+.burger-checkbox:checked + .burger::after {
+  bottom: 11px;
+  transform: rotate(-45deg);
+  transition: bottom .3s, transform .3s .15s;
+}
+.menu-list{
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background: #FFFFFF;
+  list-style-type: none;
+  transform: translateX(-100%);
+  transition: .3s;
+  width: 360px;
+  height: 631px;
+}
+.menu-list1{
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+  height: 265px;
+  margin: 60px 0;
+}
+.menu-item1{
+  font-family: 'Cormorant';
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.06px;
+  
+}
+.menu-list2{
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  height: 124px;
+}
+.menu-item2{
+  font-family: 'Open Sans';
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 17.7px;  
+}
+.create-line{
+  width: 200px;
+  border-top: 3px solid #F7F2EA;
+  width: 300px;
+  height: 2px;
+  margin-left: 30px;
+}
+.menu-item1,
+.menu-item2{
+  display: block;
+  color: black;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+}
+.menu-list3{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+background-color: #F7F2EA;
+padding: 20px 0;
+text-align: end;
+height: 60px;
+}
+.burger-checkbox:checked ~ .menu-list {
+  transform: translateX(0);
+}

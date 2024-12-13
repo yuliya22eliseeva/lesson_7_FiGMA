@@ -1,0 +1,35 @@
+.quote{
+  font-family: 'Cormorant';
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.21;
+  margin: 0 auto 150px;
+  text-align: center;
+  max-width: 744px;
+}
+.quote span{
+  background-color: #F7F2EA;
+  padding: 5px 150px 5px 3px;
+}
+@media (max-width:1000px) {
+  .quote{
+  margin-bottom: 120px;
+  }
+  }
+@media (max-width:768px) {
+.quote span{
+  padding: 5px 50px 5px 3px;
+}
+}
+@media (max-width:480px) {
+.quote{
+  max-width: 376px;
+  font-size: 16px;
+  line-height: 1.36;
+  margin-bottom: 60px;
+}
+.quote span{
+padding: 5px 50px 5px 3px;
+}
+}

@@ -1,0 +1,110 @@
+.tea-new{
+  margin: 0 auto 150px;
+  background-color: #F7F2EA;
+  text-align: center;
+  height: auto;  
+}
+.tea-news_block{
+  max-width: 1230px;
+  margin: 50px auto 0;
+  padding: 0 15px 100px;
+  display: flex;
+  gap: 40px; 
+}
+.tea-news_title{
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 100px 15px 0 15px;
+  font-family: 'Cormorant';
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 1.27;
+  text-align: left;
+}
+.tea-news_subscription{
+  max-width: 595px;
+  font-family: 'Open Sans';
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;  text-align: left;
+}
+.input{
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+input[type='email']{
+  padding-left: 15px; 
+  font-size: 20px;
+  border-bottom: 1px solid #B8B58B;
+  background: none;
+  font-family: 'Open Sans';
+  font-size: 20px;
+  font-weight: 300;
+  color: #B8B58B;
+  width: 75%;
+}
+.tea-news_join {
+  padding: 12px 41px 12px 41px;
+  background: #FFFFFF;
+  border: 1px solid #151618;
+  font-family: "Open Sans";
+  font-weight: 300;
+  line-height: 1.36;
+}
+.checkbox {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+.tea-news_mail {
+  font-family: 'Open Sans';
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.36;
+  text-align: left;
+}
+@media (max-width:1174px){ 
+  .tea-new{
+    margin-bottom: 120px;
+  }
+  .tea-news_title{
+    padding-top: 60px;
+    text-align: center;
+  }
+  .tea-news_block{
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+    max-width: 800px;
+    margin-top: 60px;
+    justify-content: center;
+  }
+  .tea-news_subscription{
+    max-width: 780px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+  }
+  .tea-mail{
+    max-width: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+@media (max-width:768px){
+  .tea-mail{
+    margin-left: 0 auto;
+  }
+  .checkbox{
+    margin-top: 10px;
+  }
+}
+@media (max-width:480px){
+  .tea-new{
+    margin-bottom: 60px;
+  }
+}

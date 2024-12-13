@@ -1,0 +1,54 @@
+.tea-icons {
+  max-width: 1230px;
+  text-align: center;
+  margin: 0 auto 150px;
+  padding: 0 15px;
+}
+.tea-icons_title {
+  font-family: 'Cormorant';
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.21;
+  margin-bottom: 60px;  
+}
+.tea-icons_cards {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+
+}
+.tea-icons-picture {
+  max-width: 200px;
+  height: 247px;
+}
+@media (max-width:1174px) {
+  .tea-icons{
+    margin-bottom: 120px;
+  }
+  .tea-icons_cards {
+    display: flex;
+    gap: 0px;
+  }
+}
+@media (max-width:995px) {
+  .tea-icons_cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+}
+@media (max-width:480px){
+  .tea-icons{
+    margin-bottom: 60px;
+  }
+}
+@media (max-width:440px){
+  /* .tea-icons_cards{
+  padding: 0 15px;
+} */
+.tea-icons_card:nth-child(3),
+.tea-icons_card:nth-child(4),
+.tea-icons_card:nth-child(5){
+  display: none;
+}
+}

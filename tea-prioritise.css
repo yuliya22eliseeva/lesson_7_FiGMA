@@ -1,0 +1,70 @@
+.tea-prioritise {
+  max-width: 1230px;
+  margin: 0 auto 150px;
+  padding: 0 15px;
+
+}
+.tea-prioritise_title {
+  font-family: "Cormorant";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.21;
+  text-align: center;
+}
+.tea-prioritise_cards {
+  margin-top: 60px;
+  display: flex;
+  justify-content:center;
+  gap: 49px;
+}
+.tea-prioritise_subtitle {
+  font-family: "Open Sans";
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 1.45;
+}
+.tea-prioritise_text {
+font-family: "Open Sans";
+font-size: 20px;
+font-weight: 600;
+line-height: 1.36;
+margin-top: 10px;
+margin-bottom: 40px;
+}
+.tea-prioritise_planet{
+display: flex;
+flex-direction: column;
+align-items: center;
+} 
+@media(max-width:1174px){
+  .tea-prioritise{
+    margin-bottom: 120px;
+  }
+  .tea-prioritise_cards{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 180px;
+    row-gap: 30px;
+  }
+  .tea-prioritise_planet{    
+    max-width: 294px;
+  }
+}
+@media(max-width:768px){
+  .tea-prioritise_cards{
+    column-gap: 70px;
+  }
+}
+@media(max-width:624px){
+  .tea-prioritise{
+    margin-bottom: 60px;
+  }
+  .tea-prioritise_cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;  
+  gap: 40px;
+  }
+}
+
