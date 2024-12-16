@@ -1,8 +1,8 @@
 .tea-icons {
   max-width: 1230px;
   text-align: center;
-  margin: 0 auto 150px;
-  padding: 0 15px;
+  margin: 0 auto;
+  padding: 150px 15px;
 }
 .tea-icons_title {
   font-family: 'Cormorant';
@@ -23,7 +23,7 @@
 }
 @media (max-width:1174px) {
   .tea-icons{
-    margin-bottom: 120px;
+  padding: 120px 15px;
   }
   .tea-icons_cards {
     display: flex;
@@ -39,13 +39,10 @@
 }
 @media (max-width:480px){
   .tea-icons{
-    margin-bottom: 60px;
+    padding: 60px 15px;
   }
 }
 @media (max-width:440px){
-  /* .tea-icons_cards{
-  padding: 0 15px;
-} */
 .tea-icons_card:nth-child(3),
 .tea-icons_card:nth-child(4),
 .tea-icons_card:nth-child(5){

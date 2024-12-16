@@ -1,27 +1,22 @@
 .tea-comments {
-  background: #F7F2EA;
+  background: #F7F2EA; 
 }
 .tea-comments_comments{
   max-width: 1230px;
   margin: 0 auto ;
-  padding: 0 15px;
-  margin-bottom: 150px;
+  padding: 60px 15px;
 }
 .tea-comments_title {
   font-family: 'Cormorant';
   font-size: 40px;
   font-weight: 400;
   line-height: 1.21;
-  padding: 60px 0 0;
   margin-bottom: 60px;
   text-align: center;
-
 }
 .tea-comments_cards {
   display: flex;
   gap: 26px;
-  padding-bottom: 60px;
-
 }
 .tea-comments_card {
   max-width: 280px;
@@ -33,7 +28,6 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-
 }
 .tea-comments_name {
   font-family: Open Sans;
@@ -43,9 +37,6 @@
   font-style: normal;
 }
 @media(max-width:1000px) {
-.tea-comments_comments{
-  margin-bottom: 120px;
-}
   .tea-comments_cards{
     justify-content: center;
   }
@@ -70,16 +61,12 @@
     column-gap: 20px;
   }
   }
-
 @media(max-width:610px) {
   .tea-comments_card{
     max-width: 220px;
   }
 }
 @media(max-width:540px) {
-  .tea-comments_comments{
-    margin-bottom: 60px;
-  }
   .tea-comments_cards {
     display: flex;
     flex-direction: column;

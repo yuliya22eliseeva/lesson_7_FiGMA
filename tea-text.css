@@ -1,61 +1,48 @@
 .tea-text{
-  background-image: url(/images/header.svg);
-  max-width: 1600px; 
-  margin: 0 auto;
+  background-image: url(/images/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: auto;
-  margin-bottom: 150px;
-  /* max-width: 100%; */
+  padding: 250px calc(50% - 600px) 48px;
 }
 
 .tea-text_cup{
-  padding-top:250px;
-  padding-left: 15px;
   max-width: 790px;
-  /* max-width: 1230px; */
   font-size: 60px;
   display: flex;
   flex-wrap: wrap;
   color: #FFFFFF;
-  margin-left: 200px;
   font-family: "Cormorant";
   font-weight: 400;
-  line-height: 60px;
-  /* margin: 0 auto; */
-  
+  line-height: 60px; 
 }
 
 .tea-text_selection{
   max-width: 558px;
-  /* max-width: 1230px; */
   margin-top: 20px;
-  padding-left: 15px;
-  margin-left: 200px;
   display: flex; 
   flex-direction: row;
   font-size: 24px;
   font-weight: 400;
   line-height: 1.21;
   color:#FFFFFF;
-  padding-bottom: 48px;
-  /* margin: 0 auto; */
 }
 @media (max-width:1174px) {
   .tea-text{
-    margin-bottom: 120px;
-  }
-  .tea-text_cup,
-  .tea-text_selection{
-    margin-left: 0;
+    padding: 250px calc(50% - 450px) 48px;
   }
 }
-@media (max-width:850px) {
+@media (max-width:934px) {
+  .tea-text{
+    padding: 250px calc(50% - 370px) 48px;
+  }
   .tea-text_cup{
     max-width: 684px;
 }
 }
-@media (max-width:716px) {
+@media (max-width:750px) {
   .tea-text{
-    margin-bottom: 60px;
+    padding: 276px 15px 50px 15px;
   }
   .tea-text_cup{
     max-width: 450px;
@@ -69,24 +56,12 @@
   }
 }
 @media (max-width:467px) {
-  .tea-text_cup{
-    max-width: 450px;
-    font-size: 40px;
-    line-height: 1.21;
-    
+  .tea-text{
+    padding: 230px 5px 30px 15px;
   }
-  .tea-text_selection{
-    max-width: 450px;
-    margin-top: 20px;
-  }
-}
-@media (max-width:467px) {
   .tea-text_cup{
     max-width: 340px;
     font-size: 24px;
-    padding-top: 230px;
-
-
   }
   .tea-text_selection{
     max-width: 332px;
@@ -95,6 +70,5 @@
     font-size: 13px;
     font-weight: 300;
     line-height: 1.36;
-    padding: 0 0 30px 15px;
   }
 }

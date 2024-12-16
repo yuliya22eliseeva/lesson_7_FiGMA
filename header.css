@@ -5,8 +5,8 @@
 }
 .tea-menu{
   max-width: 1200px;
-  margin: 30px auto;
-  padding: 0 15px;
+  margin: 0 auto;
+  padding: 30px 15px;
   display: flex;
   justify-content: center;
 }
@@ -33,28 +33,27 @@
 @media (max-width:1174px){
   .tea-main_select{
     margin-left: 59px;
+    padding: 39px 0;
   }
   .tea-main_icons{
-    margin-left: 120px;
+    margin-left: 116px;
+    padding: 39px 0;
   }
   .tea-main_search{
     margin-left: 50px;
+    padding: 39px 0;
   }
 }
 @media (max-width:934px) {
   .tea-main_select{
   display: none;
   }
-  .tea-menu{
-  margin: 30px auto;
-  }
   .menu{
     display: flex;
-    padding: 53px 0;
-    margin-left: 10px;
+    padding: 39px 0;
   }
   .tea-cup{
-    margin: auto 198px
+    margin: 0 154px 0 243px;
   }
   .tea-main_icons{
     margin: 0;
@@ -62,24 +61,31 @@
 }
 @media (max-width:654px) {
   .tea-cup{
-    margin: auto 80px auto 171px;
+    margin: 0 80px 0 171px;
   }
 }
 @media (max-width:540px) {
+  .menu{
+    padding: 14px 0;
+  }
   .tea-menu{
-    margin: 10px auto;
+    padding: 10px 15px;
     }
   .tea-cup{
     width: 39px;
     height: 54px;
   }
+  .tea-main_icons{
+    padding: 14px 0;
+  }
   .tea-main_search{
     margin-left: 30px;
+    padding: 14px 0;
   }
 }
 @media (max-width:470px) {
   .tea-cup{
-    margin: auto 50px auto 111px;
+    margin: 0 50px 0 111px;
   }
 }
 @media (max-width:370px) {

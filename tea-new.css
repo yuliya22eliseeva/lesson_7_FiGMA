@@ -1,5 +1,5 @@
 .tea-new{
-  margin: 0 auto 150px;
+  margin: 0 auto;
   background-color: #F7F2EA;
   text-align: center;
   height: auto;  
@@ -26,7 +26,8 @@
   font-family: 'Open Sans';
   font-size: 20px;
   font-weight: 300;
-  line-height: 30px;  text-align: left;
+  line-height: 30px;  
+  text-align: left;
 }
 .input{
   display: flex;
@@ -65,9 +66,6 @@ input[type='email']{
   text-align: left;
 }
 @media (max-width:1174px){ 
-  .tea-new{
-    margin-bottom: 120px;
-  }
   .tea-news_title{
     padding-top: 60px;
     text-align: center;
@@ -79,6 +77,7 @@ input[type='email']{
     max-width: 800px;
     margin-top: 60px;
     justify-content: center;
+    padding-bottom: 60px; 
   }
   .tea-news_subscription{
     max-width: 780px;
@@ -102,9 +101,17 @@ input[type='email']{
   .checkbox{
     margin-top: 10px;
   }
+  .tea-news_block{
+    margin-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 @media (max-width:480px){
-  .tea-new{
-    margin-bottom: 60px;
+  .tea-news_title{
+    padding: 50px 15px 0;
+  }
+  .tea-news_block{
+    margin-top: 30px;
+    padding-bottom: 50px;
   }
 }
